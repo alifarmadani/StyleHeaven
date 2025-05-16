@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: Poppins, sans-serif;
+}
+.container {
+    width: 90%;
+    height: fit-content;
+}
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container h2 {
+    font-weight: 600;
+    font-style: italic;
+}
+.box-stat{
+    display: flex;
+    flex-wrap: wrap;
+    width: 524px;
+    border: 1px solid #000;
+    i {
+        font-size: 70px;
+        padding: 10px 60px 10px 30px;
+    }
+    p {
+        margin-top: -10px;
+    }
+}
+.box-stat1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1070px;
+    border: 1px solid #000;
+    i {
+        font-size: 70px;
+        padding: 10px 60px 10px 30px;
+    }
+    p {
+        margin-top: -10px;
+    }
+}
+.line-vertikal {
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    margin: 10px 135px;
+    background-color: #000;
+}
+.table-order-items {
+    width: 99%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.table-order-items th,
+.table-order-items td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-order-items th {
+    background-color: #f2f2f2;
+}
+
+.filter-form input,
+.filter-form button {
+    font-family: Poppins, static;
+}
+.filter-form button:hover {
+    opacity: 0.8;
+}
+.btn-cetak {
+    padding: 10px 20px;
+    background-color: #000;
+    border: 1px solid #000;
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}

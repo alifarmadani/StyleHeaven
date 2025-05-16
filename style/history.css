@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wa {
+    z-index: 9999;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.816);
+    color: white;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    margin: 20px;
+
+    a {
+        color: white;
+    }
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 15px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.main {
+    margin-top: 90px;
+    text-align: left;
+    margin-bottom: 30px;
+    width: 93%;
+    border: 1px solid #000;
+
+    h2 {
+        font-style: italic;
+        padding: 0 30px;
+    }
+
+    span {
+        font-weight: normal;
+        font-size: 18px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+
+.order-card {
+    background: #fff;
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.order-product {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.order-product img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-variant {
+    font-size: 14px;
+    color: #777;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: -15px;
+    float: right;
+    color: red;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 5px;
+    float: right;
+    color: red;
+}
+
+.detail-btn {
+    display: inline-block;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: -3px;
+
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.product-list {
+    margin-top: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #00000036;
+    margin: 10px 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    /* ganti dari relative */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 96%;
+    padding: 1rem 0.5rem 0.5rem;
+    border: 1px solid #0000003c;
+    border-radius: 4px;
+    outline: none;
+    font-size: 0.rem;
+    font-family: Poppins, static;
+    resize: none;
+    cursor: default;
+}
+
+.form-group label {
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    background: white;
+    padding: 0 0.25rem;
+    color: #00000034;
+    font-size: 1rem;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:focus+label,
+.form-group textarea:not(:placeholder-shown)+label {
+    top: -0.6rem;
+    left: 0.4rem;
+    font-size: 0.75rem;
+    color: #333;
+}
+
+.form-group1 {
+    margin-top: -15px;
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    input {
+        font-size: 0.8rem;
+        font-family: Poppins, static;
+    }
+}
+
+.line1 {
+    background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px, transparent 0, transparent 41px, #f18d9b 0, #f18d9b 74px, transparent 0, transparent 82px);
+    width: 100%;
+    height: 2px;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.bukti-img {
+    height: 200px;
+    max-width: 90%;
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .order-card {
+        width: 85%;
+    }
+
+    .detail-btn {
+        margin-top: 10px;
+    }
+
+    .overlay-content {
+        padding: 15px 10px;
+    }
+
+    .main {
+        margin-top: 120px;
+    }
+
+    .order-header {
+        font-size: 14px;
+    }
+}

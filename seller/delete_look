@@ -1,0 +1,10 @@
+<?php 
+include 'config.php';
+$id = $_GET['id'];
+$query = "DELETE FROM looks WHERE id=$id";
+if (mysqli_query($conn, $query)) {
+    echo "<script>window.location.href='look_list.php'; alert('Product successfully deleted.');</script>";
+} else {
+    mysqli_connect_error($conn);
+}
+?>

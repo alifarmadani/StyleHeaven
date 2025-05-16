@@ -1,0 +1,126 @@
+/* style/login.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.company-logo {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+}
+
+.login-section, .register-section {
+    flex: 1;
+    padding: 0 30px;
+    position: relative;
+}
+
+.login-section {
+    border-right: 1px solid #000000;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    width: 350px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #000000;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #555555;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .company-logo {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .login-section {
+        border-right: none;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .login-section, .register-section {
+        padding: 0 10px;
+    }
+}
